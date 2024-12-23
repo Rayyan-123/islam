@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama Episodes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .drama-header {
+            background: url('drama-banner.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .drama-header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .drama-header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        .episode-card {
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .episode-card:hover {
+            transform: scale(1.05);
+        }
+        .episode-card img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .episode-card .card-body {
+            background-color: #fff;
+            padding: 15px;
+        }
+        .episode-card .btn {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .episode-card .btn:hover {
+            background-color: #138496;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Drama Banner -->
+    <div class="drama-header">
+        <div>
+            <h1>Drama Name</h1>
+            <p>An epic tale of history, courage, and faith.</p>
+        </div>
+    </div>
+
+    <!-- Drama Info Section -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About the Drama</h2>
+                <p>
+                    This drama is set in the rich historical backdrop of the Islamic era, showcasing the lives of warriors, their struggles, and their victories. 
+                    The story unfolds the sacrifices made for faith and the battles fought for justice and peace. A perfect blend of history and entertainment!
+                </p>
+                <p><strong>Genre:</strong> Historical, Action, Drama</p>
+                <p><strong>Language:</strong> Turkish</p>
+                <p><strong>Seasons:</strong> 3</p>
+            </div>
+            <div class="col-md-6">
+                <img src="drama-poster.jpg" class="img-fluid rounded" alt="Drama Poster">
+            </div>
+        </div>
+    </div>
+
+    <!-- Episode List Section -->
+    <div class="container my-4">
+        <h2 class="text-center mb-4">Episodes</h2>
+        <div class="row">
+            <!-- Episode 1 -->
+            <div class="col-md-4">
+                <div class="card episode-card">
+                    <img src="episode1-thumbnail.jpg" class="card-img-top" alt="Episode 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Episode 1: The Beginning</h5>
+                        <p class="card-text">The journey starts with a riveting tale of bravery and devotion.</p>
+                        <a href="episode1.html" class="btn btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Episode 2 -->
+            <div class="col-md-4">
+                <div class="card episode-card">
+                    <img src="episode2-thumbnail.jpg" class="card-img-top" alt="Episode 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Episode 2: The Battle</h5>
+                        <p class="card-text">An epic battle that changes the course of history forever.</p>
+                        <a href="episode2.html" class="btn btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Episode 3 -->
+            <div class="col-md-4">
+                <div class="card episode-card">
+                    <img src="episode3-thumbnail.jpg" class="card-img-top" alt="Episode 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Episode 3: The Sacrifice</h5>
+                        <p class="card-text">A tale of sacrifice for the greater good of the people.</p>
+                        <a href="episode3.html" class="btn btn-block">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-light">
+        <p>&copy; 2024 DramaHub | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
