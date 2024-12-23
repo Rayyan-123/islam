@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        video {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+              <h1>Sedul bahir 32 saat epsiode 4</h1>
+              <video id="video-player" controls>
+                <source src="../4s.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+              <button id="bookmark-btn">Save Bookmark</button>
+          
+              <script>
+                  const video = document.getElementById('video-player');
+                  const bookmarkButton = document.getElementById('bookmark-btn');
+                  const videoKey = 'videoBookmarkTime'; // Key to store the bookmark time in localStorage
+          
+                  // Load the bookmarked time when the page loads
+                  window.onload = function () {
+                      const savedTime = localStorage.getItem(videoKey);
+                      if (savedTime) {
+                          video.currentTime = parseFloat(savedTime); // Set the video time to the saved value
+                          alert(`Resuming video from ${formatTime(savedTime)}`);
+                      }
+                  };
+          
+                  // Save the current time when the bookmark button is clicked
+                  bookmarkButton.addEventListener('click', () => {
+                      const currentTime = video.currentTime;
+                      localStorage.setItem(videoKey, currentTime); // Save current time to localStorage
+                      alert(`Bookmark saved at ${formatTime(currentTime)}`);
+                  });
+          
+                  // Helper function to format time in HH:MM:SS
+                  function formatTime(seconds) {
+                      const h = Math.floor(seconds / 3600);
+                      const m = Math.floor((seconds % 3600) / 60);
+                      const s = Math.floor(seconds % 60);
+                      return `${h > 0 ? h + ':' : ''}${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+                  }
+              </script>
+          
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
