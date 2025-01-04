@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>haci beyram Veli - Episode 1</title>
+    <title>Haci Beyram Veli - Episode 2</title>
     <style>
         /* General Reset */
         body {
@@ -61,6 +61,29 @@
             border: 2px solid #3b5998;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .switch-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #3b5998;
+            color: #fff;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .switch-btn:hover {
+            background: #8b9dc3;
+        }
+
         /* Footer Section */
         footer {
             background: #3b5998;
@@ -85,22 +108,37 @@
 
     <!-- Header Section -->
     <header>
-        <h1>haci beyram Veli</h1>
+        <h1>Haci Beyram Veli</h1>
     </header>
 
     <!-- Main Content Area -->
     <div class="container">
         <h2>Episode 1</h2>
         <div class="video-container">
-            <iframe width="560" height="315" src="//ok.ru/videoembed/9684742834739?nochat=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+           <iframe id="videoFrame" src="//ok.ru/videoembed/9684742900275?nochat=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
         </div>
-        <p>Enjoy watching the first episode of <strong>Haci Beyram Veli</strong>. Immerse yourself in history and drama! Make sure to share this with your friends and family.</p>
+        <div class="button-container">
+            <button class="switch-btn" onclick="switchServer('https://ok.ru/video/9684742900275')">OK.ru</button>
+            <button class="switch-btn" onclick="switchServer('//www.dailymotion.com/embed/video/x7yknzo')">Dailymotion</button>
+            <button class="switch-btn" onclick="switchServer('//www.youtube.com/embed/dQw4w9WgXcQ')">YouTube</button>
+            <button class="switch-btn" onclick="switchServer('//vimeo.com/76979871')">Vimeo</button>
+            <button class="switch-btn" onclick="switchServer('//archive.org/embed/moviesegment')">Archive.org</button>
+            <button class="switch-btn" onclick="switchServer('//another.video.server/embed/example')">Another Server</button>
+        </div>
+        <p>Enjoy watching the second episode of <strong>Haci Beyram Veli</strong>. Immerse yourself in history and drama! Make sure to share this with your friends and family.</p>
     </div>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Drama Hub. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
+
+    <script>
+        function switchServer(url) {
+            const videoFrame = document.getElementById('videoFrame');
+            videoFrame.src = url;
+        }
+    </script>
 
 </body>
 </html>
