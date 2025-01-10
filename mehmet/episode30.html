@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haci Beyram Veli - Episode 2</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #3b5998, #8b9dc3);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Main Content Area */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #3b5998;
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+            border: 2px solid #3b5998;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .switch-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #3b5998;
+            color: #fff;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .switch-btn:hover {
+            background: #8b9dc3;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #3b5998;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mehmet: fatih al sultani</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <h2>Episode 40</h2>
+        <div class="video-container">
+           
+        </div>
+        <div class="button-container">
+            <button class="switch-btn" onclick="switchServer('//ok.ru/videoembed/9684742900275?nochat=1')">OK.ru</button>
+            <button class="switch-btn" onclick="switchServer('//geo.dailymotion.com/player.html?video=x9bsdou')">Dailymotion</button>
+            <button class="switch-btn" onclick="switchServer('//dood.work/e/gj1x8n69hyea')">Dood Stream</button>
+            <button class="switch-btn" onclick="switchServer('//player.vimeo.com/video/1043928457?h=515695307f')">Vimeo</button>
+            <button class="switch-btn" onclick="switchServer('//pixeldrain.com/u/rAQDGebM?embed')">Pixel Drain</button>
+
+           
+        </div>
+        <p>Enjoy watching the 40<sup>th</sup> episode of <strong>Mehmet fetihlar sultani</strong>. Immerse yourself in history and drama! Make sure to share this with your friends and family and you can download episodes from pixeldrain.com if you want agar ap chahain to episode pixeldrain.con se download krskte hain.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Drama Hub. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        function switchServer(url) {
+            const videoFrame = document.getElementById('videoFrame');
+            videoFrame.src = url;
+        }
+    </script>
+
+</body>
+</html>
